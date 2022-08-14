@@ -48,15 +48,16 @@
                 </ul>
         </div>
     </header>
-    <main>
+        <main>
         <!--Герой-->
         <section class="hero" >
                 <div class="container">
                     <h1 class="hero-heading">Ефективні рішення для вашого бізнесу</h1>
-                    <button type="button" class="hero-button">Замовити послугу</button>
+                    <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
                 </div>
-
+                
         </section>
+
         <!--Переваги -->
         <section class="f-section">
             <div class="container">
@@ -107,9 +108,30 @@
             <div class="container">
                 <h2 class="work-sphere-heading">Чим ми займаємося</h2>
                 <ul>
-                    <li><img src="./image/box1.jpg" alt="Розробка десктоп версії сайту" width="370"></li>
-                    <li><img src="./image/img.jpg" alt="Розробка смартфон версії сайту" width="370"></li>
-                    <li><img src="./image/img(1).jpg" alt="Розробка планшет версії сайту" width="370"></li>
+                    <li>
+                        <div class="ws-thumb">
+                            <img src="./image/box1.jpg" alt="Розробка десктоп версії сайту" width="370">
+                            <div class="overlay-heading">
+                                <h3>Десктопні додатки</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ws-thumb">
+                            <img src="./image/img.jpg" alt="Розробка смартфон версії сайту" width="370">
+                            <div class="overlay-heading">
+                                <h3>Мобільні додатки</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ws-thumb">
+                            <img src="./image/img(1).jpg" alt="Розробка планшет версії сайту" width="370">
+                            <div class="overlay-heading">
+                                <h3>Дизайнерські рішення</h3>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -371,6 +393,24 @@
                 </div>
         </div>
     </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquid in id eaque reprehenderit nobis quia
+                    unde, deleniti rerum quis veniam, iure et non praesentium? Praesentium dolor reiciendis saepe nostrum animi
+                    minus. Inventore alias necessitatibus soluta autem facilis laboriosam quis consequuntur tempora ex, commodi
+                    maxime vel magnam iure ipsum voluptate maiores dignissimos officiis pariatur eos, nam velit obcaecati vitae
+                    aspernatur molestias! Odio atque explicabo optio, est, doloremque voluptas saepe vitae natus, ipsam eius
+                    impedit soluta sint tenetur! Voluptatem error omnis quod tempore enim nulla, esse velit ipsa voluptas
+                    assumenda! Atque expedita itaque aut modi porro tenetur. Dolore ab veritatis aperiam.</p>
+                <button type="button" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="./image/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    <script src="./js/modal.js"></script>
+    
 </body>
 
 </html>
